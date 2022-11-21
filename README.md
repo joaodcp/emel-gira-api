@@ -76,6 +76,7 @@
 <h4>Obtenha o <i><a href="https://graphql.org/learn/schema/">schema</a></i> através de <a href="https://graphql.org/learn/introspection/">introspeção</a>.</h4> 
 
 <h3 id="gira-api-req">Pedido</h3>
+<h4>URL: https://apigira.emel.pt/graphql</h4>
 <h4>Deverá incluir um cabeçalho de autenticação do tipo Bearer, que contenha o o valor da chave JSON obtido em <a href="#auth">Autenticação</a>:</h4>
 
 ```
