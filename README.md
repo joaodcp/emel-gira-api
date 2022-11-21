@@ -16,11 +16,9 @@
 
 - [Autenticação](#auth)
   * [Auth](#auth-init)
-  * [Refresh](#auth-refresh)
-  * [Revoke](#auth-revoke)
+  * [Refresh e Revoke](#auth-refrev)
 - [API GIRA](#gira-api)
-  * [Pedido](#endpoints-req)
-  * [Resposta](#endpoints-res)
+  * [Pedido](#gira-api-req)
 
 </details>
 
@@ -30,6 +28,7 @@
 <h4>Autenticação através do sistema de login da EMEL</h4> 
 
 <h3 id="auth-init-req">Pedido</h3>
+<h4>URL: https://api-auth.emel.pt/auth</h4>
 
 ```javascript
 {
@@ -58,12 +57,25 @@
 
 <p>Pode descodificar o token JWT "accessToken" e saber mais sobre a norma JWT em <a href="https://jwt.io/">JWT.io</a>
 
-<h1 id="endpoints">API GIRA</h1>
+<h2 id="auth-refrev">Refresh e Revoke</h2>
+<h4>Pode atualizar ou revogar o seu token.</h4> 
+
+<h3 id="auth-refrev-req">Pedido</h3>
+<h4>Refresh URL: https://api-auth.emel.pt/token/refresh</h4>
+<h4>Revoke URL: https://api-auth.emel.pt/token/revoke</h4>
+
+```javascript
+{
+    "Token": "", //substituir pelo token a gerir
+}
+```  
+
+<h1 id="gira-api">API GIRA</h1>
 <h2>GraphQL</h2>
 <h4>A API GIRA faz uso a linguagem de consulta <a href="https://graphql.org/">GraphQL</a>.</h4>
 <h4>Obtenha o <i><a href="https://graphql.org/learn/schema/">schema</a></i> através de <a href="https://graphql.org/learn/introspection/">introspeção</a>.</h4> 
 
-<h3 id="endpoints-req">Pedido</h3>
+<h3 id="gira-api-req">Pedido</h3>
 <h4>Deverá incluir um cabeçalho de autenticação do tipo Bearer, que contenha o o valor da chave JSON obtido em <a href="#auth">Autenticação</a>:</h4>
 
 ```
