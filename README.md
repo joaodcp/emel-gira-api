@@ -8,7 +8,6 @@
 
 <h4 align="center">API privada da GIRA, usada pela aplicação.</h4>
 <h6 align="center">A API aqui descrita é a utilizada pela aplicação oficial da GIRA, pelo que é necessário iniciar sessão junto do serviço de autenticação da EMEL.<br>Os tokens expiram a cada 2 minutos e devem ser atualizados com refresh.</h6>
-<p align="center"><a href="https://joaodcp.github.io/emel-gira-api/">GraphQL Playground/GraphiQL</a></p>
 <hr>
 
 ## Índice de Conteúdos
