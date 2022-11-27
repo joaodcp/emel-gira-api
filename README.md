@@ -81,5 +81,5 @@
 <h4>Deverá incluir um cabeçalho de autenticação do tipo Bearer, que contenha o o valor da chave JSON obtido em <a href="#auth">Autenticação</a>:</h4>
 
 ```
-Authorization: Bearer { authorizationToken }
+Authorization: Bearer { accessToken }
 ```
