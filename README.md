@@ -25,7 +25,8 @@
 <hr>
 <h1 id="auth">Autenticação</h1>
 <h2 id="auth-init">Auth</h2>
-<h4>Autenticação através do sistema de login da EMEL</h4> 
+<h4>Autenticação através do sistema de login da EMEL</h4>
+<h5>Os tokens obtidos têm um tempo de vida de 2 minutos.</h5>
 
 <h3 id="auth-init-req">Pedido</h3>
 <h4>URL: https://api-auth.emel.pt/auth</h4>
@@ -48,7 +49,7 @@
         "message": "Success"
     },
     "data": {
-        "accessToken": "", // token JWT a usar nos pedidos para a API GIRA
+        "accessToken": "", // token JWT a usar nos pedidos para a API GIRA, expira 2 minutos após gerado
         "refreshToken": "", // guardar token para atualizar o token expirado
         "expiration": int // ignorar valor
     } 
