@@ -67,7 +67,7 @@
 
 ```javascript
 {
-    "Token": "", //substituir pelo token a gerir
+    "Token": "" //substituir pelo token a gerir
 }
 ```  
 
