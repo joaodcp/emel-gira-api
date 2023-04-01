@@ -17,6 +17,8 @@
 - [Autenticação](#auth)
   * [Auth](#auth-init)
   * [Refresh e Revoke](#auth-refrev)
+  * [Perfil](#auth-profile)
+  * [Modificar Perfil](#auth-modifprofile)
 - [API GIRA](#gira-api)
   * [Pedido](#gira-api-req)
 
@@ -71,6 +73,26 @@
 }
 ```  
 
+<h2 id="auth-profile">Perfil</h2>
+<h4>Pode consultar os seus detalhes.</h4>
+
+<h3 id="auth-profile-req">Pedido</h3>
+
+```
+GET https://api-auth.emel.pt/user
+```  
+
+<h2 id="auth-modifprofile">Perfil</h2>
+<h4>Pode alterar os seus detalhes.</h4>
+
+<h3 id="auth-profile-req">Pedido</h3>
+<h4>Deve incluir no corpo um objeto JSON formatado de acordo com a resposta obtida em <a href="#auth-profile">Perfil</a></h4>
+
+```
+PUT https://api-auth.emel.pt/user
+```  
+
+
 <h1 id="gira-api">API GIRA</h1>
 <h2>GraphQL</h2>
 <h4>A API GIRA faz uso a linguagem de consulta <a href="https://graphql.org/">GraphQL</a>.</h4>
@@ -78,7 +100,7 @@
 
 <h3 id="gira-api-req">Pedido</h3>
 <h4>URL: https://apigira.emel.pt/graphql</h4>
-<h4>Deverá incluir um cabeçalho de autenticação do tipo Bearer, que contenha o o valor da chave JSON obtido em <a href="#auth">Autenticação</a>:</h4>
+<h4>Deverá incluir um cabeçalho de autenticação do tipo Bearer, que contenha o valor da chave "accessToken" do JSON obtido em <a href="#auth">Autenticação</a>:</h4>
 
 ```
 Authorization: Bearer { accessToken }
