@@ -82,7 +82,7 @@
 GET https://api-auth.emel.pt/user
 ```  
 
-<h2 id="auth-modifprofile">Perfil</h2>
+<h2 id="auth-modifprofile">Modificar Perfil</h2>
 <h4>Pode alterar os seus detalhes.</h4>
 
 <h3 id="auth-profile-req">Pedido</h3>
