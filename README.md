@@ -53,12 +53,23 @@
     "data": {
         "accessToken": "", // token JWT a usar nos pedidos para a API GIRA, expira 2 minutos após gerado
         "refreshToken": "", // guardar token para atualizar o token expirado
-        "expiration": int // ignorar valor
+        "expiration": int // timestamp em ticks (referente ao accessToken)
     } 
 }
 ```
+<h3>JWT</h3>
+<p>Pode descodificar o token JWT "accessToken" e saber mais sobre a norma JWT em <a href="https://jwt.io/">JWT.io</a></p>
 
-<p>Pode descodificar o token JWT "accessToken" e saber mais sobre a norma JWT em <a href="https://jwt.io/">JWT.io</a>
+<h3>Tick</h3>
+<p>
+  Tick é uma unidade de tempo comumente utilizada em serviços baseados em .NET
+  <br>1 tick = 10000 ms e a contagem inicia-se em 0001-01-01T00:00:00.0000000 UTC
+  <br>Saiba mais sobre a unidade em https://learn.microsoft.com/en-us/dotnet/api/system.datetime.ticks
+  <br>Em https://tickstodatetime.azurewebsites.net é possível a conversão instantânea para um formato <i>human-readable</i>.
+</p>
+
+
+
 
 <h2 id="auth-refrev">Refresh e Revoke</h2>
 <h4>Pode atualizar ou revogar o seu token.</h4> 
